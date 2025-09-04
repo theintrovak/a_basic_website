@@ -5,12 +5,16 @@ import Home from './Components/home.jsx'
 import About from './Components/about.jsx'
 import './App.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import Contact from './Components/Contact.jsx'
+import Github from './Components/github.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="github" element={<Github />} />
 
     </Route>
   )
